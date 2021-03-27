@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Documents/PracticasArqui/Sumador1bit/Sumador1bit.srcs/sources_1/new/Sumador1B.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Sumador1B'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Documents/PracticasArqui/Sumador1bit/Sumador1bit.srcs/sim_1/new/tbSumador1B.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tbSumador1B'
