@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Apr  4 19:05:12 2021
+# Process ID: 17340
+# Current directory: D:/Documents/PracticasArqui/arquitectura/P4/ALU1Bit/ALU1Bit.runs/synth_1
+# Command line: vivado.exe -log ALU1Bit.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ALU1Bit.tcl
+# Log file: D:/Documents/PracticasArqui/arquitectura/P4/ALU1Bit/ALU1Bit.runs/synth_1/ALU1Bit.vds
+# Journal file: D:/Documents/PracticasArqui/arquitectura/P4/ALU1Bit/ALU1Bit.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source ALU1Bit.tcl -notrace
