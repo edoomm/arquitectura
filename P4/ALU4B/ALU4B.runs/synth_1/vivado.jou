@@ -2,11 +2,11 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Sun Apr  4 20:07:27 2021
-# Process ID: 4880
-# Current directory: D:/Documents/PracticasArqui/arquitectura/P4/ALU4B/ALU4B.runs/synth_1
+# Start of session at: Tue Apr  6 01:44:48 2021
+# Process ID: 10196
+# Current directory: C:/Users/mara0/Documents/ESCOM6/Arquitectura de computadoras/P4/ALU4B/ALU4B.runs/synth_1
 # Command line: vivado.exe -log ALU4B.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ALU4B.tcl
-# Log file: D:/Documents/PracticasArqui/arquitectura/P4/ALU4B/ALU4B.runs/synth_1/ALU4B.vds
-# Journal file: D:/Documents/PracticasArqui/arquitectura/P4/ALU4B/ALU4B.runs/synth_1\vivado.jou
+# Log file: C:/Users/mara0/Documents/ESCOM6/Arquitectura de computadoras/P4/ALU4B/ALU4B.runs/synth_1/ALU4B.vds
+# Journal file: C:/Users/mara0/Documents/ESCOM6/Arquitectura de computadoras/P4/ALU4B/ALU4B.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source ALU4B.tcl -notrace

@@ -1,0 +1,12 @@
+
+{ 
+    crc :  8615557455651671112  , 
+    ccp_crc :  0  , 
+    cmdline : " -wto 8aaf0924fda744c5991ad937383007e6 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot alu4bits_behav xil_defaultlib.alu4bits" , 
+    buildDate : "Dec  7 2018" , 
+    buildTime : "00:33:28" , 
+    linkCmd : "C:\\Xilinx\\Vivado\\2018.3\\data\\..\\tps\\mingw\\6.2.0\\win64.o\\nt\\bin\\gcc.exe -Wa,-W  -O -Wl,--stack,104857600 -o \"xsim.dir/alu4bits_behav/xsimk.exe\"   \"xsim.dir/alu4bits_behav/obj/xsim_0.win64.obj\" \"xsim.dir/alu4bits_behav/obj/xsim_1.win64.obj\" -L\"C:\\Xilinx\\Vivado\\2018.3\\lib\\win64.o\" -lrdi_simulator_kernel  -lrdi_simbridge_kernel" , 
+    aggregate_nets : 
+    [ 
+    ] 
+} 

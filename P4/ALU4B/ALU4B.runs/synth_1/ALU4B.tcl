@@ -17,6 +17,7 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
+set_param synth.incrementalSynthesisCache C:/Users/mara0/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-17236-LAPTOP-NA4LU81N/incrSyn
 set_msg_config -id {Synth 8-256} -limit 10000
 set_msg_config -id {Synth 8-638} -limit 10000
 create_project -in_memory -part xc7a100tcsg324-1
@@ -24,16 +25,16 @@ create_project -in_memory -part xc7a100tcsg324-1
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir D:/Documents/PracticasArqui/arquitectura/P4/ALU4B/ALU4B.cache/wt [current_project]
-set_property parent.project_path D:/Documents/PracticasArqui/arquitectura/P4/ALU4B/ALU4B.xpr [current_project]
+set_property webtalk.parent_dir {C:/Users/mara0/Documents/ESCOM6/Arquitectura de computadoras/P4/ALU4B/ALU4B.cache/wt} [current_project]
+set_property parent.project_path {C:/Users/mara0/Documents/ESCOM6/Arquitectura de computadoras/P4/ALU4B/ALU4B.xpr} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
-set_property ip_output_repo d:/Documents/PracticasArqui/arquitectura/P4/ALU4B/ALU4B.cache/ip [current_project]
+set_property ip_output_repo {c:/Users/mara0/Documents/ESCOM6/Arquitectura de computadoras/P4/ALU4B/ALU4B.cache/ip} [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_vhdl -library xil_defaultlib {
-  D:/Documents/PracticasArqui/arquitectura/P4/ALU4B/ALU4B.srcs/sources_1/imports/sources_1/new/ALU1Bit.vhd
-  D:/Documents/PracticasArqui/arquitectura/P4/ALU4B/ALU4B.srcs/sources_1/imports/sources_1/imports/new/Sumador1B.vhd
-  D:/Documents/PracticasArqui/arquitectura/P4/ALU4B/ALU4B.srcs/sources_1/new/ALU4B.vhd
+  {C:/Users/mara0/Documents/ESCOM6/Arquitectura de computadoras/P4/ALU4B/ALU4B.srcs/sources_1/imports/sources_1/new/ALU1Bit.vhd}
+  {C:/Users/mara0/Documents/ESCOM6/Arquitectura de computadoras/P4/ALU4B/ALU4B.srcs/sources_1/imports/sources_1/imports/new/Sumador1B.vhd}
+  {C:/Users/mara0/Documents/ESCOM6/Arquitectura de computadoras/P4/ALU4B/ALU4B.srcs/sources_1/new/ALU4B.vhd}
 }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
