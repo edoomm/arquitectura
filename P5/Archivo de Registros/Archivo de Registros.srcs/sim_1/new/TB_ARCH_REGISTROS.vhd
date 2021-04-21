@@ -119,8 +119,8 @@ begin
    VARIABLE VAR_dir : std_logic;
 	VARIABLE CADENA : STRING(1 TO 4); -- !!!AC�? CHANCE SE TIENE QUE CAMBIAR A (1 TO 5) PARA PODER ESCRIBIR "SHAMT"
    begin		
-		file_open(ARCH_VEC, "VECTORES.TXT", READ_MODE); 	-- !!!AC�? IGUAL PIENSO QUE SE LE DEBE CAMBIAR POR LA RUTA DE NUESTRAS COMPUTADORAS DONDE TENEMOS ESOS ARCHIVOS DE TEXTO
-		file_open(ARCH_RES, "RESULTADO.TXT", WRITE_MODE); 	-- !!!AC�? IGUAL PIENSO QUE SE LE DEBE CAMBIAR POR LA RUTA DE NUESTRAS COMPUTADORAS DONDE TENEMOS ESOS ARCHIVOS DE TEXTO
+		file_open(ARCH_VEC, "D:\Documents\PracticasArqui\arquitectura\P5\Archivo\VECTORES.TXT", READ_MODE); 	-- !!!AC�? IGUAL PIENSO QUE SE LE DEBE CAMBIAR POR LA RUTA DE NUESTRAS COMPUTADORAS DONDE TENEMOS ESOS ARCHIVOS DE TEXTO
+		file_open(ARCH_RES, "D:\Documents\PracticasArqui\arquitectura\P5\Archivo\RESULTADO.TXT", WRITE_MODE); 	-- !!!AC�? IGUAL PIENSO QUE SE LE DEBE CAMBIAR POR LA RUTA DE NUESTRAS COMPUTADORAS DONDE TENEMOS ESOS ARCHIVOS DE TEXTO
 
 		CADENA := "RR1 ";
 		write(LINEA_RES, CADENA, right, CADENA'LENGTH+1);	--ESCRIBE LA CADENA "RR1"
@@ -145,19 +145,19 @@ begin
 		writeline(ARCH_RES,LINEA_RES);-- escribe la linea en el archivo
 
 		WAIT FOR 100 NS;
-		FOR I IN 0 TO 1 LOOP
+		FOR I IN 0 TO 11 LOOP
 			readline(ARCH_VEC,LINEA_VEC); -- lee una linea completa
 
          -- Hread es pa leer hexadecimales
-         read(LINEA_VEC, VAR_readReg1);
+         Hread(LINEA_VEC, VAR_readReg1);
          readReg1 <= VAR_readReg1;
-         read(LINEA_VEC, VAR_readReg2);
+         Hread(LINEA_VEC, VAR_readReg2);
          readReg2 <= VAR_readReg2;
-         read(LINEA_VEC, VAR_shamt);
+         Hread(LINEA_VEC, VAR_shamt);
          shamt <= VAR_shamt;
-         read(LINEA_VEC, VAR_writeReg);
+         Hread(LINEA_VEC, VAR_writeReg);
          writeReg <= VAR_writeReg;
-         read(LINEA_VEC, VAR_writeData);
+         Hread(LINEA_VEC, VAR_writeData);
          writeData <= VAR_writeData;
          read(LINEA_VEC, VAR_wr);
          wr <= VAR_wr;
@@ -173,16 +173,16 @@ begin
          VAR_readData1 := readData1;
          VAR_readData2 := readData2;
 
-         write(LINEA_RES, VAR_readReg1, right, 5); --ESCRIBE EL CAMPO      RR1
-         write(LINEA_RES, VAR_readReg2, right, 5); --ESCRIBE EL CAMPO      RR2
-         write(LINEA_RES, VAR_shamt, right, 5); --ESCRIBE EL CAMPO         SHAM
-         write(LINEA_RES, VAR_writeReg, right, 5); --ESCRIBE EL CAMPO      WREG
-         write(LINEA_RES, VAR_writeData, right, 5);   --ESCRIBE EL CAMPO   WD
+         Hwrite(LINEA_RES, VAR_readReg1, right, 5); --ESCRIBE EL CAMPO      RR1
+         Hwrite(LINEA_RES, VAR_readReg2, right, 5); --ESCRIBE EL CAMPO      RR2
+         Hwrite(LINEA_RES, VAR_shamt, right, 5); --ESCRIBE EL CAMPO         SHAM
+         Hwrite(LINEA_RES, VAR_writeReg, right, 5); --ESCRIBE EL CAMPO      WREG
+         Hwrite(LINEA_RES, VAR_writeData, right, 5);   --ESCRIBE EL CAMPO   WD
          write(LINEA_RES, VAR_wr, right, 5); --ESCRIBE EL CAMPO            WR
          write(LINEA_RES, VAR_she, right, 5);   --ESCRIBE EL CAMPO         SHE
          write(LINEA_RES, VAR_dir, right, 5);   --ESCRIBE EL CAMPO         DIR
-         write(LINEA_RES, VAR_readData1, right, 5);   --ESCRIBE EL CAMPO   RD1
-         write(LINEA_RES, VAR_readData2, right, 5);   --ESCRIBE EL CAMPO   RD2
+         Hwrite(LINEA_RES, VAR_readData1, right, 5);   --ESCRIBE EL CAMPO   RD1
+         Hwrite(LINEA_RES, VAR_readData2, right, 5);   --ESCRIBE EL CAMPO   RD2
 
 			writeline(ARCH_RES,LINEA_RES);-- escribe la linea en el archivo
 			

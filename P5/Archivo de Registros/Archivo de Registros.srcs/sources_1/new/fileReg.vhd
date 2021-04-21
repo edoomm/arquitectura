@@ -69,11 +69,11 @@ begin
         end if;
         --corrimiento derecha
         if (wr = '1') and (she = '1') and (dir = '0') then
-            registros(conv_integer(writeReg)) <= to_stdlogicvector(to_bitvector(registros(conv_integer(dir))) srl (conv_integer(shamt)));
+            registros(conv_integer(writeReg)) <= to_stdlogicvector(to_bitvector(registros(conv_integer(readReg2))) srl (conv_integer(shamt)));
         end if;
-        --corrimiiento izquierda
+        --corrimiiento izquierda1
         if (wr = '1') and (she = '1') and (dir = '1')then
-           registros(conv_integer(writeReg)) <= to_stdlogicvector(to_bitvector(registros(conv_integer(dir))) sll (conv_integer(shamt)));
+           registros(conv_integer(writeReg)) <= to_stdlogicvector(to_bitvector(registros(conv_integer(readReg2))) sll (conv_integer(shamt)));
         end if;
     end if;
 end process;
