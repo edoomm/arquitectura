@@ -46,7 +46,7 @@ entity fileReg is
 end fileReg;
 
 architecture Behavioral of fileReg is
--- organización = número palabras * tamaño palabra = 2^4 palabras * 16 bits
+-- organizaciï¿½n = nï¿½mero palabras * tamaï¿½o palabra = 2^4 palabras * 16 bits
 type matriz is array (0 to 15) of std_logic_vector(15 downto 0);
 signal registros:matriz;
 begin
@@ -59,7 +59,7 @@ begin
         end loop;
     --secuenciales
     elsif (rising_edge(clk)) then
-        --retención
+        --retenciï¿½n
         if (wr = '0') and (she = '0') and (dir = '0') then
             registros <= registros;
         end if;
@@ -69,15 +69,15 @@ begin
         end if;
         --corrimiento derecha
         if (wr = '1') and (she = '1') and (dir = '0') then
-            --registros(conv_integer(writeReg)) <= std_logic_vector(unsigned(registros(conv_integer(readReg2))) sll conv_integer(shamt));
+            registros(conv_integer(writeReg)) <= to_stdlogicvector(to_bitvector(registros(conv_integer(dir))) srl (conv_integer(shamt)));
         end if;
         --corrimiiento izquierda
         if (wr = '1') and (she = '1') and (dir = '1')then
-           
+           registros(conv_integer(writeReg)) <= to_stdlogicvector(to_bitvector(registros(conv_integer(dir))) sll (conv_integer(shamt)));
         end if;
     end if;
 end process;
---asíncronas
+--asï¿½ncronas
 --lectura
 readData1 <= registros(conv_integer(readReg1));
 readData2 <= registros(conv_integer(readReg2));
