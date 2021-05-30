@@ -17,21 +17,25 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_param synth.incrementalSynthesisCache C:/Users/mara0/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-9844-LAPTOP-NA4LU81N/incrSyn
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 create_project -in_memory -part xc7a100tcsg324-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir C:/Users/mara0/Documents/ESCOM6/PracticasArquitectura/arquitectura/ASM/ASM.cache/wt [current_project]
-set_property parent.project_path C:/Users/mara0/Documents/ESCOM6/PracticasArquitectura/arquitectura/ASM/ASM.xpr [current_project]
+set_property webtalk.parent_dir D:/Documents/PracticasArqui/arquitectura/P9/ASM.cache/wt [current_project]
+set_property parent.project_path D:/Documents/PracticasArqui/arquitectura/P9/ASM.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
-set_property ip_output_repo c:/Users/mara0/Documents/ESCOM6/PracticasArquitectura/arquitectura/ASM/ASM.cache/ip [current_project]
+set_property ip_output_repo d:/Documents/PracticasArqui/arquitectura/P9/ASM.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
-read_vhdl -library xil_defaultlib C:/Users/mara0/Documents/ESCOM6/PracticasArquitectura/arquitectura/ASM/ASM.srcs/sources_1/new/cartaASM.vhd
+read_vhdl -library xil_defaultlib {
+  D:/Documents/PracticasArqui/arquitectura/P9/ASM.srcs/sources_1/new/arreglo.vhd
+  D:/Documents/PracticasArqui/arquitectura/P9/ASM.srcs/sources_1/new/paq_asm.vhd
+  D:/Documents/PracticasArqui/arquitectura/P9/ASM.srcs/sources_1/new/cartaASM.vhd
+  D:/Documents/PracticasArqui/arquitectura/P9/ASM.srcs/sources_1/new/contador.vhd
+  D:/Documents/PracticasArqui/arquitectura/P9/ASM.srcs/sources_1/new/deco.vhd
+  D:/Documents/PracticasArqui/arquitectura/P9/ASM.srcs/sources_1/new/asm.vhd
+}
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
 # design are intentionally left as such for best results. Dcp files will be
@@ -43,12 +47,12 @@ foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]
 
-synth_design -top cartaASM -part xc7a100tcsg324-1
+synth_design -top asm -part xc7a100tcsg324-1
 
 
 # disable binary constraint mode for synth run checkpoints
 set_param constraints.enableBinaryConstraints false
-write_checkpoint -force -noxdef cartaASM.dcp
-create_report "synth_1_synth_report_utilization_0" "report_utilization -file cartaASM_utilization_synth.rpt -pb cartaASM_utilization_synth.pb"
+write_checkpoint -force -noxdef asm.dcp
+create_report "synth_1_synth_report_utilization_0" "report_utilization -file asm_utilization_synth.rpt -pb asm_utilization_synth.pb"
 file delete __synthesis_is_running__
 close [open __synthesis_is_complete__ w]

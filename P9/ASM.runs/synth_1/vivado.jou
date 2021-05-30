@@ -2,11 +2,11 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Wed May 26 20:10:34 2021
-# Process ID: 15356
-# Current directory: C:/Users/mara0/Documents/ESCOM6/PracticasArquitectura/arquitectura/ASM/ASM.runs/synth_1
-# Command line: vivado.exe -log cartaASM.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source cartaASM.tcl
-# Log file: C:/Users/mara0/Documents/ESCOM6/PracticasArquitectura/arquitectura/ASM/ASM.runs/synth_1/cartaASM.vds
-# Journal file: C:/Users/mara0/Documents/ESCOM6/PracticasArquitectura/arquitectura/ASM/ASM.runs/synth_1\vivado.jou
+# Start of session at: Sun May 30 14:42:55 2021
+# Process ID: 6724
+# Current directory: D:/Documents/PracticasArqui/arquitectura/P9/ASM.runs/synth_1
+# Command line: vivado.exe -log asm.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source asm.tcl
+# Log file: D:/Documents/PracticasArqui/arquitectura/P9/ASM.runs/synth_1/asm.vds
+# Journal file: D:/Documents/PracticasArqui/arquitectura/P9/ASM.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
-source cartaASM.tcl -notrace
+source asm.tcl -notrace

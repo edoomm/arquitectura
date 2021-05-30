@@ -1,26 +1,7 @@
-----------------------------------------------------------------------------------
--- Company: 
--- Engineer: 
--- 
--- Create Date: 28.05.2021 18:26:32
--- Design Name: 
--- Module Name: contador - Behavioral
--- Project Name: 
--- Target Devices: 
--- Tool Versions: 
--- Description: 
--- 
--- Dependencies: 
--- 
--- Revision:
--- Revision 0.01 - File Created
--- Additional Comments:
--- 
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.STD_LOGIC_unsigned.ALL;
 use IEEE.STD_LOGIC_arith.ALL;
-
 
 entity contador is
     Port ( clk, clr, LB, EB : in STD_LOGIC;
@@ -40,7 +21,7 @@ begin
                 auxQB := auxQB;
             elsif (LB = '1' and EB = '0') then
                 auxQB := DB;
-            elsif (LB = '1' and EB = '0') then
+            elsif (LB = '0' and EB = '1') then
                 auxQB := auxQB + 1;
             end if;
         end if;
