@@ -10,17 +10,17 @@ end deco;
 
 architecture Behavioral of deco is
 
-    constant guion  : std_logic_vector(6 downto 0) := "0000001"; -- '-' en CC | Hex:00
-    constant n0     : std_logic_vector(6 downto 0) := "1111110"; -- '1' en CC | Hex:7E
-    constant n1     : std_logic_vector(6 downto 0) := "0110000"; -- '1' en CC | Hex:30
-    constant n2     : std_logic_vector(6 downto 0) := "1101101"; -- '2' en CC | Hex:6D
-    constant n3     : std_logic_vector(6 downto 0) := "1111001"; -- '3' en CC | Hex:79
-    constant n4     : std_logic_vector(6 downto 0) := "0110011"; -- '4' en CC | Hex:33
-    constant n5     : std_logic_vector(6 downto 0) := "1011011"; -- '5' en CC | Hex:5B
-    constant n6     : std_logic_vector(6 downto 0) := "1011111"; -- '6' en CC | Hex:5F
-    constant n7     : std_logic_vector(6 downto 0) := "1110000"; -- '7' en CC | Hex:70
-    constant n8     : std_logic_vector(6 downto 0) := "1111111"; -- '8' en CC | Hex:7F
-    constant n9     : std_logic_vector(6 downto 0) := "1110011"; -- '9' en CC | Hex:73
+    constant guion  : std_logic_vector(6 downto 0) := "1111110"; -- '-' en CA | Hex:00
+    constant n0     : std_logic_vector(6 downto 0) := "0000001"; -- '1' en CA | Hex:7E
+    constant n1     : std_logic_vector(6 downto 0) := "1001111"; -- '1' en CA | Hex:30
+    constant n2     : std_logic_vector(6 downto 0) := "0010010"; -- '2' en CA | Hex:6D
+    constant n3     : std_logic_vector(6 downto 0) := "0000110"; -- '3' en CA | Hex:79
+    constant n4     : std_logic_vector(6 downto 0) := "1001100"; -- '4' en CA | Hex:33
+    constant n5     : std_logic_vector(6 downto 0) := "0100100"; -- '5' en CA | Hex:5B
+    constant n6     : std_logic_vector(6 downto 0) := "0100000"; -- '6' en CA | Hex:5F
+    constant n7     : std_logic_vector(6 downto 0) := "0001111"; -- '7' en CA | Hex:70
+    constant n8     : std_logic_vector(6 downto 0) := "0000000"; -- '8' en CA | Hex:7F
+    constant n9     : std_logic_vector(6 downto 0) := "0001100"; -- '9' en CA | Hex:73
 
 begin
 
