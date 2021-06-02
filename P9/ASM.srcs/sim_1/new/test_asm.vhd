@@ -28,28 +28,27 @@ entity test_asm is
 end test_asm;
 
 architecture Behavioral of test_asm is
-component cartaASM is
-    Port(
-        clk, clr, ini, z, a0: in STD_LOGIC;
-        la, lb, ea, eb, ec: out STD_LOGIC
+component asm is
+    port (
+        ini, clr, clk   : in std_logic;
+        D               : in std_logic_vector(8 downto 0);
+        qa              : out std_logic_vector(8 downto 0);
+        disp            : out std_logic_vector(6 downto 0)
     );
 end component;
 
-signal ini, clr, clk, z, a0 : std_logic;
-signal la, lb, ea, eb, ec : STD_LOGIC;
+signal ini, clr, clk : std_logic := '0';
+signal D, qa :  std_logic_vector(8 downto 0) := (others => '0');
+signal disp:  std_logic_vector(6 downto 0) := (others => '0');
 
 begin
-    uu : cartaASM Port Map(
+    asm1 : asm Port Map(
         ini => ini,
         clr => clr,
         clk => clk,
-        z => z,
-        a0 => a0,
-        la => la,
-        lb => lb,
-        ea => ea,
-        eb => eb,
-        ec => ec
+        D => D,
+        qa => qa,
+        disp => disp
     );
     
     clock : process
@@ -63,22 +62,24 @@ begin
     test : process 
     begin
         clr <= '1';
-        wait for 30 ns;
-        clr <= '0';
-        wait for 60 ns;
-        ini <= '1';
-        wait for 10 ns;
-        ini <= '0';
-        wait for 50 ns;
-        a0 <= '1';
-        wait for 10 ns;
-        a0 <= '0';
         wait for 20 ns;
-        a0 <= '1';
-        wait for 10 ns;
-        a0 <= '0';
-        wait for 120 ns;
-        z <= '1';
+        
+		clr<='0';
+		wait for 20 ns;
+		D<="101101011";
+		wait for 20 ns;
+		ini<='1';
+		wait for 100 ns;
+		
+		clr <= '1';
+        wait for 20 ns;
+		clr<='0';
+		wait for 20 ns;
+		D<="000011101";
+		wait for 20 ns;
+		ini<='1';
+		wait for 100 ns;
+		
         wait;
     end process;
 

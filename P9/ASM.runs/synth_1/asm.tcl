@@ -22,19 +22,19 @@ create_project -in_memory -part xc7a100tcsg324-1
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir D:/Documents/PracticasArqui/arquitectura/P9/ASM.cache/wt [current_project]
-set_property parent.project_path D:/Documents/PracticasArqui/arquitectura/P9/ASM.xpr [current_project]
+set_property webtalk.parent_dir C:/Users/Abraham/Documents/GitHub/arquitectura/P9/ASM.cache/wt [current_project]
+set_property parent.project_path C:/Users/Abraham/Documents/GitHub/arquitectura/P9/ASM.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
-set_property ip_output_repo d:/Documents/PracticasArqui/arquitectura/P9/ASM.cache/ip [current_project]
+set_property ip_output_repo c:/Users/Abraham/Documents/GitHub/arquitectura/P9/ASM.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_vhdl -library xil_defaultlib {
-  D:/Documents/PracticasArqui/arquitectura/P9/ASM.srcs/sources_1/new/arreglo.vhd
-  D:/Documents/PracticasArqui/arquitectura/P9/ASM.srcs/sources_1/new/paq_asm.vhd
-  D:/Documents/PracticasArqui/arquitectura/P9/ASM.srcs/sources_1/new/cartaASM.vhd
-  D:/Documents/PracticasArqui/arquitectura/P9/ASM.srcs/sources_1/new/contador.vhd
-  D:/Documents/PracticasArqui/arquitectura/P9/ASM.srcs/sources_1/new/deco.vhd
-  D:/Documents/PracticasArqui/arquitectura/P9/ASM.srcs/sources_1/new/asm.vhd
+  C:/Users/Abraham/Documents/GitHub/arquitectura/P9/ASM.srcs/sources_1/new/arreglo.vhd
+  C:/Users/Abraham/Documents/GitHub/arquitectura/P9/ASM.srcs/sources_1/new/paq_asm.vhd
+  C:/Users/Abraham/Documents/GitHub/arquitectura/P9/ASM.srcs/sources_1/new/cartaASM.vhd
+  C:/Users/Abraham/Documents/GitHub/arquitectura/P9/ASM.srcs/sources_1/new/contador.vhd
+  C:/Users/Abraham/Documents/GitHub/arquitectura/P9/ASM.srcs/sources_1/new/deco.vhd
+  C:/Users/Abraham/Documents/GitHub/arquitectura/P9/ASM.srcs/sources_1/new/asm.vhd
 }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the

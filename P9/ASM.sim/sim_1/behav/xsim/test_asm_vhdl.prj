@@ -1,6 +1,11 @@
 # compile vhdl design source files
 vhdl xil_defaultlib  \
+"../../../../ASM.srcs/sources_1/new/arreglo.vhd" \
+"../../../../ASM.srcs/sources_1/new/paq_asm.vhd" \
+"../../../../ASM.srcs/sources_1/new/asm.vhd" \
 "../../../../ASM.srcs/sources_1/new/cartaASM.vhd" \
+"../../../../ASM.srcs/sources_1/new/contador.vhd" \
+"../../../../ASM.srcs/sources_1/new/deco.vhd" \
 "../../../../ASM.srcs/sim_1/new/test_asm.vhd" \
 
 # Do not sort compile order
