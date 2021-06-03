@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Wed Jun  2 19:12:40 2021
-| Host         : DESKTOP-4JMR2UC running 64-bit major release  (build 9200)
+| Date         : Thu Jun  3 18:39:29 2021
+| Host         : DESKTOP-J0740S9 running 64-bit major release  (build 9200)
 | Command      : report_utilization -file asm_utilization_synth.rpt -pb asm_utilization_synth.pb
 | Design       : asm
 | Device       : 7a100tcsg324-1

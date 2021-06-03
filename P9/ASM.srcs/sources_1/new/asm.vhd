@@ -71,7 +71,7 @@ begin
         Qout    => disp_aux
     );
 
-    disp <= disp_aux when ec = '1' else "0000001";
+    disp <= disp_aux when ec = '1' else "1111110";
     
     qa <= qa_aux;
 

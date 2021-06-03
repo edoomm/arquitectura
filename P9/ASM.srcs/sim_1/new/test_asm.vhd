@@ -69,7 +69,7 @@ begin
 		D<="101101011";
 		wait for 20 ns;
 		ini<='1';
-		wait for 100 ns;
+		wait for 120 ns;
 		ini<='0';
 		
 		clr<='1';
@@ -78,7 +78,7 @@ begin
 		D<="000011101";
 		wait for 20 ns;
 		ini<='1';
-		wait for 100 ns;
+		wait for 120 ns;
 		ini<='0';
 		
 		clr<='1';
@@ -87,7 +87,7 @@ begin
 		D<="000010000";
 		wait for 20 ns;
 		ini<='1';
-		wait for 100 ns;
+		wait for 120 ns;
 		ini<='0';
 		
 		clr<='1';
@@ -96,9 +96,8 @@ begin
 		D<="100001000";
 		wait for 20 ns;
 		ini<='1';
-		wait for 100 ns;
+		wait for 120 ns;
 		ini<='0';
-        wait;
         
         clr<='1';
 		wait for 20 ns;
@@ -106,8 +105,10 @@ begin
 		D<="000000000";
 		wait for 20 ns;
 		ini<='1';
-		wait for 100 ns;
+		wait for 120 ns;
 		ini<='0';
+		wait;
+		
     end process;
 
 end Behavioral;
