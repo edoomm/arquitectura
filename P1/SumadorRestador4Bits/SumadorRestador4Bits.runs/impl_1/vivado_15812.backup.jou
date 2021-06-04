@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu Apr 22 23:33:43 2021
+# Process ID: 15812
+# Current directory: C:/Users/mara0/Documents/ESCOM6/PracticasArquitectura/arquitectura/P1/SumadorRestador4Bits/SumadorRestador4Bits.runs/impl_1
+# Command line: vivado.exe -log sumador4.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source sumador4.tcl -notrace
+# Log file: C:/Users/mara0/Documents/ESCOM6/PracticasArquitectura/arquitectura/P1/SumadorRestador4Bits/SumadorRestador4Bits.runs/impl_1/sumador4.vdi
+# Journal file: C:/Users/mara0/Documents/ESCOM6/PracticasArquitectura/arquitectura/P1/SumadorRestador4Bits/SumadorRestador4Bits.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source sumador4.tcl -notrace

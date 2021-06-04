@@ -1,0 +1,25 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Jun  4 09:56:42 2021
+# Process ID: 6796
+# Current directory: C:/Users/mara0/Documents/ESCOM6/PracticasArquitectura/arquitectura/P5/Archivo de Registros
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16328 C:\Users\mara0\Documents\ESCOM6\PracticasArquitectura\arquitectura\P5\Archivo de Registros\Archivo de Registros.xpr
+# Log file: C:/Users/mara0/Documents/ESCOM6/PracticasArquitectura/arquitectura/P5/Archivo de Registros/vivado.log
+# Journal file: C:/Users/mara0/Documents/ESCOM6/PracticasArquitectura/arquitectura/P5/Archivo de Registros\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/mara0/Documents/ESCOM6/PracticasArquitectura/arquitectura/P5/Archivo de Registros/Archivo de Registros.xpr}
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/mara0/Documents/ESCOM6/PracticasArquitectura/arquitectura/P5/Archivo de Registros'
+INFO: [Project 1-313] Project file moved from 'D:/Documents/PracticasArqui/arquitectura/P5/Archivo de Registros' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:17 . Memory (MB): peak = 652.320 ; gain = 65.602
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Jun  4 10:01:46 2021...

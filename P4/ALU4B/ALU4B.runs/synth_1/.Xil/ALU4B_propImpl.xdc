@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:D:/Documents/PracticasArqui/arquitectura/P4/ALU4B/ALU4B.srcs/constrs_1/imports/P4/Nexys4DDR_LabRemoto.xdc rfile:../../../ALU4B.srcs/constrs_1/imports/P4/Nexys4DDR_LabRemoto.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/Users/mara0/Documents/ESCOM6/PracticasArquitectura/arquitectura/P4/ALU4B/ALU4B.srcs/constrs_1/imports/P4/Nexys4DDR_LabRemoto.xdc rfile:../../../ALU4B.srcs/constrs_1/imports/P4/Nexys4DDR_LabRemoto.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:34 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN H17   IOSTANDARD LVCMOS33 } [get_ports { s[0] }]; #IO_L18P_T2_A24_15 Sch=led[0]
 set_property src_info {type:XDC file:1 line:35 export:INPUT save:INPUT read:READ} [current_design]

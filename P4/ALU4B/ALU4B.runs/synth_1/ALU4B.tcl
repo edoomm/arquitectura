@@ -22,16 +22,16 @@ create_project -in_memory -part xc7a100tcsg324-1
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir D:/Documents/PracticasArqui/arquitectura/P4/ALU4B/ALU4B.cache/wt [current_project]
-set_property parent.project_path D:/Documents/PracticasArqui/arquitectura/P4/ALU4B/ALU4B.xpr [current_project]
+set_property webtalk.parent_dir C:/Users/mara0/Documents/ESCOM6/PracticasArquitectura/arquitectura/P4/ALU4B/ALU4B.cache/wt [current_project]
+set_property parent.project_path C:/Users/mara0/Documents/ESCOM6/PracticasArquitectura/arquitectura/P4/ALU4B/ALU4B.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
-set_property ip_output_repo d:/Documents/PracticasArqui/arquitectura/P4/ALU4B/ALU4B.cache/ip [current_project]
+set_property ip_output_repo c:/Users/mara0/Documents/ESCOM6/PracticasArquitectura/arquitectura/P4/ALU4B/ALU4B.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_vhdl -library xil_defaultlib {
-  D:/Documents/PracticasArqui/arquitectura/P4/ALU4B/ALU4B.srcs/sources_1/imports/sources_1/new/ALU1Bit.vhd
-  D:/Documents/PracticasArqui/arquitectura/P4/ALU4B/ALU4B.srcs/sources_1/imports/sources_1/imports/new/Sumador1B.vhd
-  D:/Documents/PracticasArqui/arquitectura/P4/ALU4B/ALU4B.srcs/sources_1/new/ALU4B.vhd
+  C:/Users/mara0/Documents/ESCOM6/PracticasArquitectura/arquitectura/P4/ALU4B/ALU4B.srcs/sources_1/imports/sources_1/new/ALU1Bit.vhd
+  C:/Users/mara0/Documents/ESCOM6/PracticasArquitectura/arquitectura/P4/ALU4B/ALU4B.srcs/sources_1/imports/sources_1/imports/new/Sumador1B.vhd
+  C:/Users/mara0/Documents/ESCOM6/PracticasArquitectura/arquitectura/P4/ALU4B/ALU4B.srcs/sources_1/new/ALU4B.vhd
 }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -41,8 +41,8 @@ read_vhdl -library xil_defaultlib {
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc D:/Documents/PracticasArqui/arquitectura/P4/ALU4B/ALU4B.srcs/constrs_1/imports/P4/Nexys4DDR_LabRemoto.xdc
-set_property used_in_implementation false [get_files D:/Documents/PracticasArqui/arquitectura/P4/ALU4B/ALU4B.srcs/constrs_1/imports/P4/Nexys4DDR_LabRemoto.xdc]
+read_xdc C:/Users/mara0/Documents/ESCOM6/PracticasArquitectura/arquitectura/P4/ALU4B/ALU4B.srcs/constrs_1/imports/P4/Nexys4DDR_LabRemoto.xdc
+set_property used_in_implementation false [get_files C:/Users/mara0/Documents/ESCOM6/PracticasArquitectura/arquitectura/P4/ALU4B/ALU4B.srcs/constrs_1/imports/P4/Nexys4DDR_LabRemoto.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]

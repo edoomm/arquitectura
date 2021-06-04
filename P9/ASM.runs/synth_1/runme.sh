@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='D:/Documents/PracticasArqui/arquitectura/P9/ASM.runs/synth_1'
+HD_PWD='C:/Users/mara0/Documents/ESCOM6/PracticasArquitectura/arquitectura/P9/ASM.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
