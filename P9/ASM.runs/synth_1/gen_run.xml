@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1622763548">
-  <File Type="PA-TCL" Name="asm.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="asm_drc_synth.rpt"/>
-  <File Type="REPORTS-TCL" Name="asm_reports.tcl"/>
-  <File Type="RDS-RDS" Name="asm.vds"/>
-  <File Type="RDS-UTIL" Name="asm_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="asm_utilization_synth.pb"/>
-  <File Type="RDS-DCP" Name="asm.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="asm_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="asm_timing_summary_synth.pb"/>
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1622765608">
+  <File Type="PA-TCL" Name="p9.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="p9_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="p9_reports.tcl"/>
+  <File Type="RDS-RDS" Name="p9.vds"/>
+  <File Type="RDS-UTIL" Name="p9_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="p9_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="p9.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="p9_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="p9_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/arreglo.vhd">
@@ -18,6 +18,12 @@
       </FileInfo>
     </File>
     <File Path="$PSRCDIR/sources_1/new/paq_asm.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/asm.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -41,7 +47,13 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/asm.vhd">
+    <File Path="$PSRCDIR/sources_1/new/div_freq.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/p9.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -49,7 +61,7 @@
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="asm"/>
+      <Option Name="TopModule" Val="p9"/>
       <Option Name="TopAutoSet" Val="TRUE"/>
     </Config>
   </FileSet>

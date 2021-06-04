@@ -31,10 +31,12 @@ set_property ip_cache_permissions {read write} [current_project]
 read_vhdl -library xil_defaultlib {
   D:/Documents/PracticasArqui/arquitectura/P9/ASM.srcs/sources_1/new/arreglo.vhd
   D:/Documents/PracticasArqui/arquitectura/P9/ASM.srcs/sources_1/new/paq_asm.vhd
+  D:/Documents/PracticasArqui/arquitectura/P9/ASM.srcs/sources_1/new/asm.vhd
   D:/Documents/PracticasArqui/arquitectura/P9/ASM.srcs/sources_1/new/cartaASM.vhd
   D:/Documents/PracticasArqui/arquitectura/P9/ASM.srcs/sources_1/new/contador.vhd
   D:/Documents/PracticasArqui/arquitectura/P9/ASM.srcs/sources_1/new/deco.vhd
-  D:/Documents/PracticasArqui/arquitectura/P9/ASM.srcs/sources_1/new/asm.vhd
+  D:/Documents/PracticasArqui/arquitectura/P9/ASM.srcs/sources_1/new/div_freq.vhd
+  D:/Documents/PracticasArqui/arquitectura/P9/ASM.srcs/sources_1/new/p9.vhd
 }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -47,12 +49,12 @@ foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]
 
-synth_design -top asm -part xc7a100tcsg324-1
+synth_design -top p9 -part xc7a100tcsg324-1
 
 
 # disable binary constraint mode for synth run checkpoints
 set_param constraints.enableBinaryConstraints false
-write_checkpoint -force -noxdef asm.dcp
-create_report "synth_1_synth_report_utilization_0" "report_utilization -file asm_utilization_synth.rpt -pb asm_utilization_synth.pb"
+write_checkpoint -force -noxdef p9.dcp
+create_report "synth_1_synth_report_utilization_0" "report_utilization -file p9_utilization_synth.rpt -pb p9_utilization_synth.pb"
 file delete __synthesis_is_running__
 close [open __synthesis_is_complete__ w]
