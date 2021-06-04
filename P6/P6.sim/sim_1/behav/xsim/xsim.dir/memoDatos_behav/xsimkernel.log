@@ -1,7 +1,0 @@
-Running: xsim.dir/memoDatos_behav/xsimk.exe -simmode gui -wdb memoDatos_behav.wdb -simrunnum 0 -socket 62012
-Design successfully loaded
-Design Loading Memory Usage: 6216 KB (Peak: 6216 KB)
-Design Loading CPU Usage: 140 ms
-Simulation completed
-Simulation Memory Usage: 6720 KB (Peak: 6720 KB)
-Simulation CPU Usage: 140 ms

@@ -1,4 +1,0 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/mara0/Documents/ESCOM6/PracticasArquitectura/arquitectura/P6/P6.srcs/sim_1/new/memoDatos.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'memoDatos'
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/mara0/Documents/ESCOM6/PracticasArquitectura/arquitectura/P6/P6.srcs/sim_1/new/testbench_ram.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'testbench_ram'
